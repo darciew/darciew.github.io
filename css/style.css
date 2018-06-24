@@ -1,0 +1,97 @@
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat; /*stops the b/g img from tiling*/
+	background-position: 50% 50%; /* centers the b/g img*/
+	background-size: cover; /* b/g img covers the entire page*/
+	background-attachment: fixed; /*The b/g image will not scroll with the page*/
+	font-family: sans-serif;
+	color: #638CA6;
+}
+
+.main {
+	background-color: rgba(255, 255, 255, 0.8); /* makes color transparant*/
+	/*box-shadow: 0px 0px 30px 0px white; ->looks like a glow*/
+	max-width: 600px;
+	margin: 0 auto; /*centers the item*/
+	padding: 20px;
+	border-radius: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+	.main {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) {
+	.main {
+		width: 600px;
+	}
+	
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+	margin: 0;
+	font-family: 'Playfair Display', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 14px;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+h3 {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+
+h3 + * { /* + gets me the next element, the * is a wildcard, whatever is after h3*/
+	display: none;
+}
+
+img {
+	/*centering the image*/
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	border: 10px solid #17A697;
+	border-radius: 50%;
+}
+
+p,
+ol,		/*treats all 3 elements the same way*/
+ul {
+	line-height: 1.6;
+	list-style: none;
+	padding-left: 0;
+} 
+
+ul li {
+	display: inline-block;
+	background: #9AADBD;
+	padding: 4px 12px;
+	margin-right: 1px;
+	border-radius: 3px;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color:#DCDDCD;
+}
+
+a:focus,
+a:hover {
+	text-decoration: underline;
+	color: #E79000;
+
+}
